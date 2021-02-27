@@ -17,14 +17,23 @@ for (let i = 0; i < pokemonTeam.length; i++) {
   let id2 = "desc" + i;
   console.log(movesArray);
 
-  let results = "<ol>";
+  let results = "<h2>Moves:</h2><ol>";
+  let results2= "Your " + pokemonTeam[i].name + " has the moves ";
+
+
+  for (let j = 0; j < 4; j++){
+    let move =  movesArray[i][0][j];
+    results2 += "<br/>" + (j+1) + "." + move ;
+  }
   for (let j = 0; j < 4; j++){
     let move =  movesArray[i][0][j];
     results += "<li>" + move + "</li>";
   }
   results += "</ol>";
 
-  document.getElementById(id2).innerHTML = results;
+
+
+  document.getElementById(id2).innerHTML = results2;
   //console.log(JSON.stringify(movesArray[i]));
 
 
