@@ -1,0 +1,161 @@
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+.page {
+  margin: 1em 1em;
+}
+body {
+	background-color: red;
+}
+.team{
+	margin-top: 1em;
+  margin-bottom: 1em;
+	margin:0;
+}
+.team img{
+ width : 100%;
+ margin-top: .5em;
+ margin-bottom: .5em;
+ margin-left: .1em;
+ margin-right: .1em;
+ border: 3px solid black;
+ border-radius: 4px;
+}
+
+form {
+	text-align: center;
+	margin-top: 1.5em;
+  font-size: 1.3em;
+}
+
+
+.button{
+	text-align: center;
+	background-color: lightgrey;
+	padding: .7em 0em;
+
+	border: 1px solid black;
+	margin: 2em;
+	width: 20%;
+	color: black;
+	font-size: 10px;
+}
+.Left{
+	position: absolute;
+	left: 0;
+}
+.Right{
+	position: absolute;
+	right: 0;
+}
+img {
+  width: 100%;
+  border: 2px solid grey;
+  margin-top: 1.7em;
+}
+.center {
+  text-align: center;
+  margin-top: 1.5em;
+}
+
+
+
+
+///////////////////////////*index.html*/
+
+#profile {
+  padding-top: 4em;
+}
+#header{
+  background-color: #ab0018;
+  padding: 3em;
+  margin: 1em;
+	border-radius: .5em;
+	color: black;
+}
+/*img {
+  width : 100%;
+}*/
+#header img {
+  width : 100%;
+}
+#header h1{
+  text-align: center;
+	font-family: andale mono, monospace;
+}
+#desc0, #desc1, #desc2, #desc3, #desc4,#desc5 {
+
+	padding: 2em;
+	font-size: 30px;
+	width: 100%;
+	text-align: center;
+}
+#profile0, #profile1,#profile2,#profile3,#profile4,#profile5 {
+/*	margin-top : 4em;*/
+
+}
+#pokeballDesc0, #pokeballDesc1, #pokeballDesc2, #pokeballDesc3 {
+	padding-bottom: 4em;
+}
+.finishedContainer{
+	border: 2px solid black;
+	margin-bottom: 1em;
+}
+#moveDesc {
+	display: none;
+	background-color: lightgrey;
+	margin-top: 3em;
+	margin-bottom: 3em;
+	padding: 2em;
+
+}
+#pokemon0, #pokemon1, #pokemon2, #pokemon3, #pokemon4, #pokemon5 {
+	height: 130px;
+	font-size: 15px;
+}
+.teamHeader{
+	padding: 4em;
+	text-align: center;
+
+	background-color: lightgrey;
+
+	color: black;
+	font-family: andale mono, monospace;
+}
+.footer{
+	padding: 2em;
+	text-align: center;
+	background-color: lightgrey;
+	color: black;
+}
+.spacer{
+    height: 2em;
+}
+.pokeballImage {
+	padding: 5em;
+}
+@media only screen and (min-width: 990px) {
+	.page{
+		width: 1100px;
+		margin: 0 auto;
+	}
+	.home{
+	  margin: 0;
+	  position: absolute;
+	  top: 50%;
+	  left: 50%;
+	  -ms-transform: translate(-50%, -50%);
+	  transform: translate(-50%, -50%);
+	}
+	.spacer{
+	    height: 4em;
+	}
+	.button{
+		padding: .7em 1em;
+		margin: 2em;
+		width: 15%;
+		font-size: 17px;
+	}
+}
