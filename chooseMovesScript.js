@@ -9,7 +9,6 @@ for(let i = 0; i < pokemonTeam.length; i++) {
   console.log(newId);
   console.log(pokemonTeam[i]);
   document.getElementById(newId).src = pokemonTeam[i].sprites.front_default;
-  //pokemonTeam[i].sprites.front_default;
 }
 
 
@@ -50,10 +49,8 @@ document.getElementById("submitMoves").addEventListener("click", function(event)
 
       individualMoves.push(move);
 
-      console.log("THIS IS THE SMALL ONE: " + individualMoves);
   }
   movesArray.push([individualMoves]);
-  console.log("THIS IS THE BIG ONE: " + movesArray);
 
   sessionStorage.setItem('movesArray', JSON.stringify(movesArray));
   window.location.href = "chooseMovesScript.js";
@@ -92,8 +89,7 @@ document.getElementById("moveSearchSubmit").addEventListener("click", function(e
       document.getElementById("moveSearchInput").value = "";
 
     }).catch(function() {
-      console.log("did not work");
-      window.alert("MOVE SPELT INCORRECTLY");
+      window.alert("Move Spelt Incorrectly (make sure everything is in lowercase!)");
     });
 
 });

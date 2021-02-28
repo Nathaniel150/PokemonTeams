@@ -32,7 +32,7 @@ if (document.getElementById("pokemonSubmit") != null) {
       document.getElementById("pokemonInput").value = "";
       counter++;
     }).catch(function() {
-      window.alert("POKEMON SPELT INCORRECTLY");
+      window.alert("Pokemon Spelt Incorrectly (make sure everything is in lowercase!)");
     });
 
   });
